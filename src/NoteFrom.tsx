@@ -79,7 +79,7 @@ const NoteFrom = ({
           </Row>
           <Form.Group controlId="markdown">
             <Form.Label>Body</Form.Label>
-            <Form.Control required as="textarea" ref={markdownRef} rows={15} />
+            <Form.Control defaultValue={markdown} required as="textarea" ref={markdownRef} rows={15} />
           </Form.Group>
           <Stack direction="horizontal" gap={2} className="justify-content-end">
             <Button type="submit" variant="primary">
